@@ -3,7 +3,7 @@
 set -o errexit
 
 bundle install
-
+yarn install --check-files
 bundle exec rails assets:precompile
 bundle exec rails assets:clean
 bundle exec rails tailwindcss:install
