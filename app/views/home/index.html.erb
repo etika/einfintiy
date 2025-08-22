@@ -4,13 +4,46 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+html,body,h1,h2,h3,h4,h5,h6, pre {font-family: "Roboto", sans-serif}
 .popover {
-    white-space: pre-line;    
+  word-wrap: break-word; 
+  white-space: pre-wrap;
+  margin: 0 !important;
+  word-break: break-all;
+
 }
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+
+pre{
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      overflow: auto;
+      <%# background-color: #f4f4f4; %>
+      <%# border: 1px solid #ddd; %>
+      padding: 10px;
+  }
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: teal;
+   color: white;
+   text-align: center;
+}
+
 </style>
 </head>
+
 <body class="w3-light-grey">
+
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -112,9 +145,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
              Linkedin Profile-https://www.linkedin.com/in/etika-ahuja/
              <p class="popover">
               <h5 class="w3-opacity"><b>Projects </b></h5>
-
+</p>
               
-
+<pre>
 Siam makro (may 2020- may 2025) Giving full application support which includes bug fixing, application suppport and root cause analysis.
 
 Centaman( December17- Jan18) Project Objective Storing success and error responses of api with rspecs using HTTPI Client using dry-structs, dry-types, dry-matcher. Storing the responses of the 3rd party API to a database using use case driven approach.
@@ -139,7 +172,7 @@ Online Revenue Reporting Software Project Objective The Online Revenue Reporting
 
 Webpage Monitoring Software Project Objective It is software developed to monitor urls at regular interval and if any change has occurred on that particular webpage then immediate notification through e-mail or sms is to be generated. Java 6.0, LINUX,JSP,MYSQL
 
-</p>
+</pre>
           <hr>
         </div>
 
@@ -168,15 +201,19 @@ Webpage Monitoring Software Project Objective It is software developed to monito
   
   <!-- End Page Container -->
 </div>
+<div class="footer">
+   <i class="fa fa-linkedin w3-hover-opacity">https://www.linkedin.com/in/etika-ahuja/</i> 
+</div>
 
-<!-- <footer> -->
+
+<%# <footer> %>
   <!-- <p>Find me on social media.</p> -->
   <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
   <!-- <i class="fa fa-instagram w3-hover-opacity"></i> -->
   <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
   <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
   <!-- <i class="fa fa-twitter w3-hover-opacity"></i> -->
-  <!-- <i class="fa fa-linkedin w3-hover-opacity">https://www.linkedin.com/in/etika-ahuja/</i> -->
+  <%# <i class="fa fa-linkedin w3-hover-opacity">https://www.linkedin.com/in/etika-ahuja/</i>  %>
   <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
-<!-- </footer> -->
+<%# </footer>  %>
 </body>
